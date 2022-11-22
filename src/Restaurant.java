@@ -20,11 +20,15 @@ public class Restaurant {
 
 
             int ch=input.nextInt();
-            if(ch>0 && ch<6)
-            {
-                System.out.println("enter the no of quantites of "+s[ch-1]);
-                int q=input.nextInt();
-                qt[ch-1]+=q;
+            if(ch>0 && ch<6) {
+                System.out.println("enter the no of quantites of " + s[ch - 1]);
+                int q = input.nextInt();
+                qt[ch - 1] += q;
+            }
+            else if (ch == 7) {
+                System.out.println("Previous Transactions are");
+                break;
+
 
             }
             else
